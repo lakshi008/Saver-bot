@@ -1,6 +1,6 @@
-# 🚀 Social Saver Bot
+#  Social Saver Bot
 
-## 🧠 Turning Instagram Saves into a Knowledge Base
+##  Turning Instagram Saves into a Knowledge Base
 
 We all save amazing Reels — workouts, recipes, design inspiration —  
 …and then never find them again.
@@ -13,30 +13,30 @@ View everything on a clean dashboard.
 
 ---
 
-## ✨ Features
+##  Features
 
-✅ WhatsApp Bot Integration  
-✅ Automatic Reel Categorization  
-✅ Smart Keyword + AI Classification  
-✅ SQLite Database Storage  
-✅ Clean Dashboard UI  
-✅ Category-Based Search  
-✅ Open Reel Directly  
-✅ Delete Saved Reels  
-
----
-
-## 🔁 User Flow
-
-1️⃣ User sends Instagram Reel/Post link on WhatsApp  
-2️⃣ Bot analyzes message  
-3️⃣ System categorizes content  
-4️⃣ Reel saved to database  
-5️⃣ Reel appears on dashboard  
+1. WhatsApp Bot Integration  
+2. Automatic Reel Categorization  
+3. Smart Keyword + AI Classification  
+4. SQLite Database Storage  
+5. Clean Dashboard UI  
+6. Category-Based Search  
+7. Open Reel Directly  
+8. Delete Saved Reels  
 
 ---
 
-## 🛠 Tech Stack
+## User Flow
+
+1️. User sends Instagram Reel/Post link on WhatsApp  
+2️. Bot analyzes message  
+3️. System categorizes content  
+4️. Reel saved to database  
+5️. Reel appears on dashboard  
+
+---
+
+## Tech Stack
 
 **Backend:** Python (Flask)  
 **Bot Interface:** Twilio WhatsApp Sandbox  
@@ -44,6 +44,5 @@ View everything on a clean dashboard.
 **Database:** SQLite  
 **Frontend:** HTML + CSS  
 
----
 
-## 🗂 Project Structure
+

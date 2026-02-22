@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Saver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="main">
+
+    <div class="topbar">
+        <div class="logo">Social Saver</div>
+
+        <form method="GET" style="flex:1;">
+            <input 
+                class="search"
+                type="text"
+                name="search"
+                placeholder="Search pasta, workouts, UI ideas..."
+                value="{{ search_query }}"
+            >
+        </form>
+    </div>
+
+    <h1>All Saved Reels</h1>
+    <p class="subtitle">{{ reels|length }} reels</p>
+
+    <div class="grid">
+        {% for reel in reels %}
+        <div class="card">
+
+            <h3>{{ reel[1] }}</h3>
+            <p>{{ reel[3] }}</p>
+
+            <div class="btn-row">
+
+                <a href="{{ reel[4] }}" target="_blank" class="btn-open">
+                    Open Reel
+                </a>
+
+                <a href="{{ url_for('delete_reel', reel_id=reel[0]) }}" class="btn-delete">
+                    Delete
+                </a>
+
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+</body>
+</html>
